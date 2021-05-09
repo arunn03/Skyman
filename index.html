@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyman Enterprises</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar" id="main-nav">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="images/skyman.svg" alt="skyman logo" />
+            </a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Menu" />
+            <nav>
+                <img id="mobile-exit-cta" class="mobile-exit" src="images/exit.svg" alt="exit" />
+                <ul class="primary-nav">
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li><a href=""><span style="white-space:nowrap">About Us</span></a></li>
+                    <li><a href=""><span style="white-space:nowrap">Our Team</span></a></li>
+                    <li><a href="">Service</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <p class="subhead">Work is never ending</p>
+            <h1><span class="skyman">Skyman</span> <span class="enterprises">Enterprises</span></h1>
+            <h3>EA - Grade Electrical Contrator and Electrical Consultant</h3>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <img src="images/image3.jpg" alt="bulbs" />
+            <div class="about-cta">
+                <h2>About</h2>
+                <p>
+                    We at Skyman Enterprises are a team of young energetic and dynamic professional engineers, engaged
+                    in
+                    undertaking Turnkey Electrical Contracts including Supply of various electrical materials and
+                    erection
+                    of the same to the fullest satisfaction of the customers.
+                </p>
+                <a href="">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <img src="images/image5.jpg" alt="wires" />
+            <div class="service-cta">
+                <h2>Service</h2>
+                <p>
+                    Preparation, submission and Co ordination with CEIG for obtaining load Sanction letter , Optimum and
+                    Economical Design and Engineering of electric system requirements, preparation of necessary
+                    drawings, submission, and getting approval from the Electrical Inspectorate.
+                </p>
+                <a href="">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="container">
+            <img src="images/image6.jpg" alt="bulbs" />
+            <div class="project-cta">
+                <h2>Projects</h2>
+                <p>
+                    We have to our credit of more than 40 projects, which were successfully handled, completed, and
+                    commissioned.
+                </p>
+                <a href="">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <p>
+                No.148, First Floor, SIDCO Women Industrial Park, Kattur, Thirumullaivoyal, Chennai - 600 062.
+                TamilNadu, India.
+            </p>
+            <p>
+                Tel: 044-2686 2300, Email: rskumar18@gmail.com
+            </p>
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit-cta');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            jQuery('div#main-nav.navbar').css("background-color", "rgba(255, 255, 255, 0.2)");
+            jQuery(window).scroll(function () {
+                if (jQuery(window).scrollTop() > 0) {
+                    jQuery('div#main-nav.navbar').css("background-color", "#000");
+                } else {
+                    jQuery('div#main-nav.navbar').css("background-color", "rgba(255, 255, 255, 0.2)");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  background: #F2F2F2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background: #f6f1d1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  padding: .5em;
+  -webkit-box-shadow: 0 3px 20px black;
+          box-shadow: 0 3px 20px black;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  background: #f6f1d1;
+  margin: 0 1em;
+}
+
+.navbar .container a.logo img {
+  width: 100px;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .mobile-menu {
+  margin: 2em 1em;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+  text-align: center;
+}
+
+.hero {
+  background: url("../images/wallpaper.jpg");
+  background-size: cover;
+  background-position: -5em 5.8em;
+}
+
+.hero .container {
+  text-align: left;
+}
+
+.hero .container .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin-top: 8em;
+  letter-spacing: .3em;
+  text-shadow: 5px 5px 5px #2e2e2e;
+}
+
+.hero .container h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: 0;
+}
+
+.hero .container h1 .skyman {
+  color: #2ea1ff;
+}
+
+.hero .container h1 .enterprises {
+  color: #ff23c8;
+}
+
+.hero .container h3 {
+  margin-top: -.4em;
+  color: white;
+  text-shadow: 5px 5px 5px #2e2e2e;
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+  border-radius: 10%;
+}
+
+section img {
+  border-radius: 20px;
+  margin: 2em 0;
+  width: 90%;
+}
+
+section a {
+  text-decoration: none;
+  padding: .5em 1.3em;
+  color: white;
+  background: #158eff;
+  border-radius: 20px;
+}
+
+section div {
+  margin: 0 2em;
+}
+
+section.about {
+  background: #20272E;
+  color: white;
+}
+
+section.service {
+  background: #32292f;
+  color: white;
+}
+
+section.project {
+  background: #ef476f;
+  color: white;
+}
+
+section.footer {
+  background: #20272E;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 2em 4em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: #e63493;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul {
+  margin-top: 5em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+nav .mobile-exit {
+  float: right;
+  cursor: pointer;
+  margin: .5em;
+}
+
+@media only screen and (min-width: 750px) {
+  .mobile-menu, .mobile-exit {
+    display: none;
+  }
+  .hero {
+    height: 500px;
+    background-position: 0 6em;
+  }
+  .hero .container {
+    margin-top: 15em;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 4em;
+    -ms-grid-columns: 100px auto;
+        grid-template-columns: 100px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: .5em 0 0 9.5em;
+  }
+  .navbar nav ul a {
+    color: black;
+    margin: 0 .3em 0 .3em;
+  }
+  .navbar nav ul a:hover {
+    color: black;
+  }
+  .navbar nav ul li.home a {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .hero {
+    height: 650px;
+    background-position: 0 6em;
+  }
+  .hero .subhead {
+    margin-top: 15em;
+  }
+  .about .container, .service .container, .project .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .container img, .service .container img, .project .container img {
+    margin: 0 2em;
+  }
+  .about .container div, .service .container div, .project .container div {
+    margin: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero {
+    height: 700px;
+    background-position: 0 4em;
+  }
+  .hero .subhead {
+    margin-top: 12em;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul.secondary-nav {
+    left: 0;
+    margin-left: -12em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
