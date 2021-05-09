@@ -51,7 +51,7 @@ section {
 .hero {
   background: url("../images/wallpaper.jpg");
   background-size: cover;
-  background-position: -5em 5.8em;
+  background-position: -15em 5.8em;
 }
 
 .hero .container {
