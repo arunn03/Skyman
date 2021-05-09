@@ -19,9 +19,11 @@ body {
         background: #f6f1d1;
         margin: 0 1em;
 
-        a.logo img {
-            width: 200px;
+        a.logo {
             margin-top: 1em;
+            img {
+                width: 200px;
+            }
         }
     }
 
