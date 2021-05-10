@@ -54,12 +54,14 @@ section {
 
 .hero {
   background: url("../images/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: -5em 5.8em;
   background-size: cover;
-  background-position: -15em 5.8em;
 }
 
 .hero .container {
   text-align: left;
+  text-shadow: 5px 5px 5px #2e2e2e;
 }
 
 .hero .container .subhead {
@@ -68,7 +70,6 @@ section {
   color: white;
   margin-top: 8em;
   letter-spacing: .3em;
-  text-shadow: 5px 5px 5px #2e2e2e;
 }
 
 .hero .container h1 {
@@ -88,7 +89,6 @@ section {
 .hero .container h3 {
   margin-top: -.4em;
   color: white;
-  text-shadow: 5px 5px 5px #2e2e2e;
 }
 
 .hero-img {
@@ -100,7 +100,7 @@ section {
 section img {
   border-radius: 20px;
   margin: 2em 0;
-  width: 90%;
+  width: 400px;
 }
 
 section a {
@@ -193,6 +193,14 @@ nav .mobile-exit {
   .hero .container {
     margin-top: 15em;
   }
+  section img {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
   .navbar .container {
     display: -ms-grid;
     display: grid;
@@ -265,6 +273,14 @@ nav .mobile-exit {
   }
   section {
     padding: 10em 4em;
+  }
+  section img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .hero {
     height: 700px;
