@@ -100,7 +100,7 @@ section {
 section img {
   border-radius: 20px;
   margin: 2em 0;
-  width: 80%;
+  width: 400px;
 }
 
 section a {
@@ -146,6 +146,8 @@ section.footer {
 
 nav.menu-btn {
   display: block;
+  -webkit-box-shadow: 0 3px 20px black;
+          box-shadow: 0 3px 20px black;
 }
 
 nav {
@@ -154,12 +156,12 @@ nav {
   width: 50%;
   right: 0;
   top: 0;
-  background: #e63493;
+  background: #ef476f;
   height: 100vh;
   padding: 1em;
 }
 
-nav ul {
+nav ul.primary-nav {
   margin-top: 5em;
 }
 
@@ -266,7 +268,7 @@ nav .mobile-exit {
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1160px) {
   .container {
     width: 1080px;
     margin: 0 auto;
